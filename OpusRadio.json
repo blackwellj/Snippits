@@ -1,0 +1,705 @@
+[
+    {
+        "id": "e1c07481.249ed8",
+        "type": "tab",
+        "label": "Opus Interface",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "587a989.90cbf68",
+        "type": "serial-port",
+        "z": "",
+        "serialport": "/dev/ttyUSB1",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "newline": "500",
+        "bin": "bin",
+        "out": "time",
+        "addchar": "false",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "25043b9d.ec5374",
+        "type": "serial-port",
+        "z": "",
+        "serialport": "/dev/ttyUSB1",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "newline": "50",
+        "bin": "bin",
+        "out": "time",
+        "addchar": false,
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "56f5fd17.f00064",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Radio Control",
+        "icon": "settings input antenna"
+    },
+    {
+        "id": "e732cfd6.f98fc",
+        "type": "ui_group",
+        "z": "",
+        "name": "Default",
+        "tab": "56f5fd17.f00064",
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "77e6f6e.6a8c708",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "c3019e46.d79c1",
+        "type": "serial-port",
+        "z": "",
+        "serialport": "/dev/ttyS0",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "newline": "ÿÿÿ",
+        "bin": "false",
+        "out": "char",
+        "addchar": true
+    },
+    {
+        "id": "f843e278.809ed",
+        "type": "serial-port",
+        "z": "",
+        "serialport": "/dev/ttyS0",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "newline": "50",
+        "bin": "bin",
+        "out": "time",
+        "addchar": true
+    },
+    {
+        "id": "8d64239f.1092d",
+        "type": "serial-port",
+        "serialport": "/dev/ttyS2",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "newline": "100",
+        "bin": "false",
+        "out": "time",
+        "addchar": "false"
+    },
+    {
+        "id": "5244eeb6.efacc",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "34daa89f.7e48b8",
+        "type": "serial in",
+        "z": "e1c07481.249ed8",
+        "name": "",
+        "serial": "587a989.90cbf68",
+        "x": 90,
+        "y": 100,
+        "wires": [
+            [
+                "616aa3d3.02896c",
+                "741ed342.d2352c"
+            ]
+        ]
+    },
+    {
+        "id": "c7023270.3c7ff",
+        "type": "function",
+        "z": "e1c07481.249ed8",
+        "name": "Opus Receive Text",
+        "func": "var buf = Buffer.from(msg.payload);\n\nvar message = buf.slice(21,21 + parseInt(msg.payload[19]))\n\nmsg.SID = parseInt(msg.payload[9])\nmsg.DID = parseInt(msg.payload[13])\nmsg.message = message.toString()\n \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 510,
+        "y": 80,
+        "wires": [
+            [
+                "97e23cef.5987f"
+            ]
+        ],
+        "icon": "node-red/envelope.png"
+    },
+    {
+        "id": "f0069f2a.c192e",
+        "type": "inject",
+        "z": "e1c07481.249ed8",
+        "name": "",
+        "topic": "",
+        "payload": "102",
+        "payloadType": "num",
+        "repeat": "900",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 320,
+        "wires": [
+            [
+                "4f1ddd3f.564cd4"
+            ]
+        ]
+    },
+    {
+        "id": "fb883ac3.7ade88",
+        "type": "serial out",
+        "z": "e1c07481.249ed8",
+        "name": "",
+        "serial": "587a989.90cbf68",
+        "x": 490,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "8c96bc8d.083bf",
+        "type": "function",
+        "z": "e1c07481.249ed8",
+        "name": "Opus Send Text",
+        "func": "//Get Message Parameters\nvar message = msg.payload;\nvar destination = msg.topic;\n\n//Set buffer sizes\nvar dest = Buffer.alloc(4);\nvar source = Buffer.alloc(4);\nvar DataLength = Buffer.alloc(2);\nvar dLengthBuf = Buffer.alloc(2);\nvar dChecksumBuf = Buffer.alloc(2);\nvar ChecksumBuf = Buffer.alloc(2);\n\n//Set Constants\nvar p1 = Buffer.from([0xb1,0x0]);\nvar p2 = Buffer.from([0x44,0x53,0x01,0x01]);\nvar CallType = Buffer.from([0x01]); //0x00 for Private, 0x01 for Group\nvar NoEncrypt = Buffer.from([0x0]);\nvar EOM = Buffer.from([0xd,0xa]);\nvar sendEnd = Buffer.from([0xb4]);\n\n//Set Variables\nvar SourceID = source.writeInt16LE(0);\nvar DestinationID = dest.writeInt16LE(destination);\nvar Message = Buffer.from(message,\"utf16LE\");\nvar MessageLength = DataLength.writeInt16LE([Number(Message.length)]);\n\n//Set dLength\nvar dLengthCalc = Buffer.concat([source,dest,CallType,NoEncrypt,DataLength,Message]);\nvar dLength = dLengthBuf.writeInt16LE(dLengthCalc.length);\n\n//Set dChecksum\nvar dChecksumConcat = Buffer.concat([p2,dLengthBuf,source,dest,CallType,NoEncrypt,DataLength,Message]);\nvar dChecksumArray = dChecksumBuf.writeInt16LE(Array.prototype.slice.call(dChecksumConcat, 0).reduce((a, b) => a + b, 0));\n\n//Set CF2\nvar CF2 = Buffer.from([p2.length + dLengthBuf.length + source.length + dest.length + CallType.length + NoEncrypt.length + DataLength.length + Message.length + dChecksumBuf.length + EOM.length]);\n\n//Set Checksum\nvar ChecksumConcat = Buffer.concat([p1,CF2,p2,dLengthBuf,source,dest,CallType,NoEncrypt,DataLength,Message,dChecksumBuf,EOM]);\nvar ChecksumArray = ChecksumBuf.writeInt16LE(Array.prototype.slice.call(ChecksumConcat, 0).reduce((a, b) => a + b, 0));\n\n//Build Buffer\nvar array = [p1,CF2,p2,dLengthBuf,source,dest,CallType,NoEncrypt,DataLength,Message,dChecksumBuf,EOM,ChecksumBuf,sendEnd];\nvar buf = Buffer.concat(array);\n\n//Output Data\nmsg.payload = buf\n\nmsg.debug =  DataLength\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 320,
+        "y": 260,
+        "wires": [
+            [
+                "21c169ba.217d66"
+            ]
+        ],
+        "icon": "font-awesome/fa-feed"
+    },
+    {
+        "id": "be63d2c8.4c932",
+        "type": "inject",
+        "z": "e1c07481.249ed8",
+        "name": "",
+        "topic": "240",
+        "payload": "Hello World",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 140,
+        "y": 260,
+        "wires": [
+            [
+                "8c96bc8d.083bf"
+            ]
+        ]
+    },
+    {
+        "id": "21c169ba.217d66",
+        "type": "serial out",
+        "z": "e1c07481.249ed8",
+        "name": "",
+        "serial": "587a989.90cbf68",
+        "x": 490,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "97e23cef.5987f",
+        "type": "template",
+        "z": "e1c07481.249ed8",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{SID}} sent {{message}} to {{DID}}",
+        "output": "str",
+        "x": 680,
+        "y": 80,
+        "wires": [
+            [
+                "87d74a5f.6f16d8"
+            ]
+        ]
+    },
+    {
+        "id": "87d74a5f.6f16d8",
+        "type": "debug",
+        "z": "e1c07481.249ed8",
+        "name": "Processed Msg",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 840,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "616aa3d3.02896c",
+        "type": "switch",
+        "z": "e1c07481.249ed8",
+        "name": "Detect Message Type",
+        "property": "payload[1]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 300,
+        "y": 100,
+        "wires": [
+            [
+                "c7023270.3c7ff"
+            ],
+            [],
+            [
+                "fb72f3d5.4ebb3"
+            ]
+        ],
+        "info": "0 = New Text Message\n1 = Repeated Text Message\n2 = New Location\n3 = Repeated Location\n4 = "
+    },
+    {
+        "id": "4f1ddd3f.564cd4",
+        "type": "function",
+        "z": "e1c07481.249ed8",
+        "name": "Opus Request Location",
+        "func": "//Get Message Parameters\nvar destination = msg.payload;\n\n//Set buffer sizes\nvar dest = Buffer.alloc(4);\nvar dLengthBuf = Buffer.alloc(2);\nvar dChecksumBuf = Buffer.alloc(2);\nvar ChecksumBuf = Buffer.alloc(2);\n\n//Set Constants\nvar p1 = Buffer.from([0xb1,0x0]);\nvar p2 = Buffer.from([0x44,0x53,0x10,0x01]);\nvar EOM = Buffer.from([0xd,0xa]);\nvar sendEnd = Buffer.from([0xb4]);\n\n//Set Variables\nvar DestinationID = dest.writeInt16LE(destination);\n\n//Set dLength\nvar dLength = dLengthBuf.writeInt16LE(dest.length);\n\n//Set dChecksum\nvar dChecksumConcat = Buffer.concat([p2,dLengthBuf,dest]);\nvar dChecksumArray = dChecksumBuf.writeInt16LE(Array.prototype.slice.call(dChecksumConcat, 0).reduce((a, b) => a + b, 0));\n\n//Set CF2\nvar CF2 = Buffer.from([p2.length + dLengthBuf.length + dest.length + dChecksumBuf.length + EOM.length]);\n\n//Set Checksum\nvar ChecksumConcat = Buffer.concat([p1,CF2,p2,dLengthBuf,dest,dChecksumBuf,EOM]);\nvar ChecksumArray = ChecksumBuf.writeInt16LE(Array.prototype.slice.call(ChecksumConcat, 0).reduce((a, b) => a + b, 0));\n\n//Build Buffer\nvar array = [p1,CF2,p2,dLengthBuf,dest,dChecksumBuf,EOM,ChecksumBuf,sendEnd];\nvar buf = Buffer.concat(array);\n\n//Output Data\nmsg.payload = buf\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 290,
+        "y": 320,
+        "wires": [
+            [
+                "fb883ac3.7ade88"
+            ]
+        ],
+        "icon": "node-red/white-globe.png"
+    },
+    {
+        "id": "fb72f3d5.4ebb3",
+        "type": "function",
+        "z": "e1c07481.249ed8",
+        "name": "Opus Location",
+        "func": "var buf = Buffer.from(msg.payload);\n\n//Time\nvar hh = parseInt(msg.payload[25]);\nvar mm = parseInt(msg.payload[26]);\nvar ss = parseInt(msg.payload[27]);\nmsg.time = hh + \":\" + mm + \":\" + ss\n\n//Date\nvar YY = parseInt(msg.payload[21]);\nvar MM = parseInt(msg.payload[22]);\nvar DD = parseInt(msg.payload[23]);\nmsg.date = DD + \"/\" + MM + \"/\" + YY\n\n//Lattitude\nvar LAD = parseInt(msg.payload[13]);\nvar LAM = parseInt(msg.payload[14]);\nvar LASBUF = Buffer.from([msg.payload[15],msg.payload[16]])\nvar LAS = LASBUF.readInt16LE()/100;\nmsg.Lattitude = (LAD + ((LAM / 60) + (LAS/ 3600))).toFixed(6);\nmsg.lat = LAD + \"°\" + LAM + \"'\" + LAS + \"N\" // Cardinal needs to be changed automatically\n\n//Longitude\nvar LOD = parseInt(msg.payload[17]);\nvar LOM = parseInt(msg.payload[18]);\nvar LOSBUF = Buffer.from([msg.payload[19],msg.payload[20]])\nvar LOS= LOSBUF.readInt16LE()/100;\nmsg.Longitude = (LOD + ((LOM / 60) + (LOS / 3600))).toFixed(6);\nmsg.lon = LOD + \"°\" + LOM + \"'\" + LOS   +\"E\" // Cardinal needs to be changed automatically\n\n\nvar message = buf.slice(21,21 + parseInt(msg.payload[19]))\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 500,
+        "y": 120,
+        "wires": [
+            [
+                "98868245.f6738",
+                "b5107223.cc294"
+            ]
+        ],
+        "icon": "font-awesome/fa-location-arrow"
+    },
+    {
+        "id": "95599129.96da8",
+        "type": "template",
+        "z": "e1c07481.249ed8",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Radio {{SID}} was at {{{lat}}} {{{lon}}} at {{{time}}} on {{{date}}}",
+        "output": "str",
+        "x": 1040,
+        "y": 120,
+        "wires": [
+            [
+                "cdc689cf.59f288"
+            ]
+        ]
+    },
+    {
+        "id": "741ed342.d2352c",
+        "type": "debug",
+        "z": "e1c07481.249ed8",
+        "name": "Raw Data",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 260,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "98868245.f6738",
+        "type": "debug",
+        "z": "e1c07481.249ed8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 670,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d85f8726.6f2a68",
+        "type": "worldmap",
+        "z": "e1c07481.249ed8",
+        "name": "",
+        "lat": "51.345664",
+        "lon": "1.042480",
+        "zoom": "16",
+        "layer": "Esri",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "true",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "deg",
+        "showgrid": "true",
+        "path": "/worldmap",
+        "x": 1300,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "dcf0e7d8.f134b8",
+        "type": "template",
+        "z": "e1c07481.249ed8",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\"name\":\"Radio\", \"lat\":{{{Lattitude}}}, \"lon\":{{{Longitude}}}}",
+        "output": "json",
+        "x": 1040,
+        "y": 160,
+        "wires": [
+            [
+                "62072a6f.161654",
+                "66006464.c68eec"
+            ]
+        ]
+    },
+    {
+        "id": "62072a6f.161654",
+        "type": "debug",
+        "z": "e1c07481.249ed8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1190,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "66006464.c68eec",
+        "type": "worldmap-tracks",
+        "z": "e1c07481.249ed8",
+        "name": "",
+        "depth": "50",
+        "layer": "separate",
+        "x": 1170,
+        "y": 160,
+        "wires": [
+            [
+                "d85f8726.6f2a68"
+            ]
+        ]
+    },
+    {
+        "id": "b5107223.cc294",
+        "type": "switch",
+        "z": "e1c07481.249ed8",
+        "name": "Filter 0 lon",
+        "property": "Longitude",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "0.000000",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 690,
+        "y": 120,
+        "wires": [
+            [
+                "b736ef4d.9b39"
+            ]
+        ]
+    },
+    {
+        "id": "b736ef4d.9b39",
+        "type": "switch",
+        "z": "e1c07481.249ed8",
+        "name": "Filter 0 Lat",
+        "property": "Lattitude",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "0.000000",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 850,
+        "y": 120,
+        "wires": [
+            [
+                "dcf0e7d8.f134b8",
+                "59fbc040.a962c",
+                "95599129.96da8"
+            ]
+        ]
+    },
+    {
+        "id": "59fbc040.a962c",
+        "type": "debug",
+        "z": "e1c07481.249ed8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1030,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "cdc689cf.59f288",
+        "type": "debug",
+        "z": "e1c07481.249ed8",
+        "name": "Processed Data",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1200,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "6a2c70dc.f7365",
+        "type": "uibuilder",
+        "z": "e1c07481.249ed8",
+        "name": "",
+        "topic": "",
+        "url": "test",
+        "fwdInMessages": false,
+        "allowScripts": false,
+        "allowStyles": false,
+        "copyIndex": true,
+        "showfolder": true,
+        "x": 250,
+        "y": 420,
+        "wires": [
+            [
+                "11b49474.8176fc"
+            ],
+            [
+                "16098427.8e500c"
+            ]
+        ]
+    },
+    {
+        "id": "14ef3e37.c13222",
+        "type": "inject",
+        "z": "e1c07481.249ed8",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 120,
+        "y": 420,
+        "wires": [
+            [
+                "6a2c70dc.f7365"
+            ]
+        ]
+    },
+    {
+        "id": "11b49474.8176fc",
+        "type": "debug",
+        "z": "e1c07481.249ed8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 410,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "16098427.8e500c",
+        "type": "debug",
+        "z": "e1c07481.249ed8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 410,
+        "y": 440,
+        "wires": []
+    }
+]
