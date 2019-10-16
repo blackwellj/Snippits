@@ -1,0 +1,46 @@
+var ESC = "\u001B";
+var GS = "\u001D";
+
+var Off = "\0";
+var On = "\u0001";
+var Two = "\u0010";
+
+var InitializePrinter = ESC + "@";
+var Test = "\u0012" + "\u0054";
+var BoldOn = ESC + "E" + On ;
+var BoldOff = ESC + "E" + Off ;
+var DoubleOn = GS + "!" + "\u0011";
+var DoubleOff = GS + "!" + Off ;
+var CenterOn = ESC + "a" + On ;
+var CenterOff = ESC + "a" + Off ;
+var RightOn = ESC + "a" + Two ;
+var RightOff = ESC + "a" + Off ;
+var InvertOn = GS + "B" + On ;
+var InvertOff = GS + "B" + Off ;
+var UnderlineOn = ESC + "-" + On ;
+var UnderlineOff = ESC + "-" + Off ;
+var RotateOn = ESC + "V" + On ;
+var RotateOff = ESC + "V" + Off ;
+var FlipOn = ESC + "{" + On ;
+var FlipOff = ESC + "{" + Off ;
+
+msg.Init = InitializePrinter
+msg.BoldOn = BoldOn
+msg.BoldOff = BoldOff
+msg.DoubleOn = DoubleOn
+msg.DoubleOff = DoubleOff
+msg.CenterOn = CenterOn
+msg.CenterOff = CenterOff
+msg.RightOn = RightOn
+msg.RightOff = RightOff
+msg.InvertOn = InvertOn
+msg.InvertOff = InvertOff
+msg.UnderlineOn = UnderlineOn
+msg.UnderlineOff = UnderlineOff
+msg.RotateOn = RotateOn
+msg.RotateOff = RotateOff
+msg.FlipOn = FlipOn
+msg.FlipOff = FlipOff
+msg.test = Test
+
+return msg;
