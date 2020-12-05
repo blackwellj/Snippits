@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<script>
+var ws = new WebSocket('ws://' + location.host + '/ws');
+
+document.addEventListener("keydown", key);
+
+function key(){
+ ws.send(event.key);
+}
+
+ws.onmessage = function(event) {
+    document.getElementById("data").innerHTML = event.data;
+};
+
+</script>
+<body>
+Scan RFID Tag
+<div id="data">
+</body>
+</html>
+
